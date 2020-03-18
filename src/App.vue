@@ -27,10 +27,15 @@ export default {
   name: 'App',
   components: {
   },
+  data() {
+    return {
+      sender: '',
+      count: 0
+    };
+  },
   mounted() {
-    const urlParams = new URLSearchParams(window.location.search);
-    this.sender = urlParams.get('sender');
-    this.count = urlParams.get('count');
+    this.sender = this.$route.query.sender;
+    this.count = this.$route.query.count;
   }
 }
 </script>

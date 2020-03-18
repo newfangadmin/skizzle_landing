@@ -6,16 +6,11 @@ Vue.config.productionTip = false
 
 Vue.use(Router)
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'App',
-      component: App
-    }
-  ]
+const router = new Router({
+  mode: 'history'
 })
 
 new Vue({
   render: h => h(App),
+  router
 }).$mount('#app')
