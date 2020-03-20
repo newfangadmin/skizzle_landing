@@ -6,6 +6,8 @@ Vue.config.productionTip = false
 
 Vue.use(Router)
 
+console.log('docref1', document.referrer);
+
 const router = new Router({
   mode: 'history'
 })

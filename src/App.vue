@@ -36,7 +36,7 @@ export default {
   mounted() {
     this.sender = this.$route.query.sender;
     this.count = this.$route.query.count;
-    console.log('docref', document.referrer);
+    console.log('docref2', document.referrer);
   }
 }
 </script>
