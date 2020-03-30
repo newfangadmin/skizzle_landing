@@ -12,10 +12,12 @@
       <div class="line3">Here are the steps to get started:</div>
       <ul class="steps">
         <li>Download the Skizzle extension from <a href="skizzle.zip" target="_blank">here</a>.</li>
-        <li>Unzip the downloaded file. Open the chrome://extensions tab in your browser and drag the extracted folder into this page.</li>
-        <li>Go back to you gmail and refresh the page.</li>
-        <li>Click the Skizzle icon in the extensions area of your browser and follow through on the signup steps there.</li>
-        <li> Once signed up, close the extension and you will see the attachments in your email.</li>
+        <li>Unzip the downloaded file.</li>
+        <li>Open the chrome://extensions tab and turn on "developer mode" on the top right of the screen.</li>
+        <li>Now drag the unzipped folder into this page(chrome://extensions).</li>
+        <li>Go back to Gmail and click the Skizzle icon in the extensions area of your browser and follow through on the signup steps there.</li>
+        <li>Once signed up, refresh the page.</li>
+        <li>You will see the attachment(s) in your email.</li>
       </ul>
     </div>
   </div>
