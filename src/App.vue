@@ -10,15 +10,12 @@
       <div class="line1">{{ sender }} has shared ({{ count }}) encrypted attachments with you via Skizzle.</div>
       <div class="line2">You need to install Skizzle's chrome extension before you can securely view them.</div>
       <div class="line3">Here are the steps to get started:</div>
-      <ul class="steps">
-        <li>Download the Skizzle extension from <a href="skizzle.zip" target="_blank">here</a>.</li>
-        <li>Unzip the downloaded file.</li>
-        <li>Open the chrome://extensions tab and turn on "developer mode" on the top right of the screen.</li>
-        <li>Now drag the unzipped folder into this page(chrome://extensions).</li>
-        <li>Go back to Gmail and click the Skizzle icon in the extensions area of your browser and follow through on the signup steps there.</li>
+      <ol class="steps">
+        <li>Install the extension from <a class="extLink" href="https://chrome.google.com/webstore/detail/skizzle/mjkcepplkockpofgjhbnbjajfljleegm/">here</a>.</li>
+        <li>Click the Skizzle icon in the extensions area of your browser and follow through on the signup steps there.</li>
         <li>Once signed up, refresh the page.</li>
-        <li>You will see the attachment(s) in your email.</li>
-      </ul>
+        <li>You will now see the attachment(s) in your email.</li>
+      </ol>
     </div>
   </div>
 </template>
@@ -34,6 +31,12 @@ export default {
       sender: '',
       count: 0
     };
+  },
+  methods: {
+    installExt() {
+      // eslint-disable-next-line no-undef
+      chrome.webstore.install("https://chrome.google.com/webstore/detail/mjkcepplkockpofgjhbnbjajfljleegm");
+    }
   },
   mounted() {
     this.sender = this.$route.query.sender;
@@ -91,14 +94,19 @@ body {
 }
 
 .steps {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .steps li {
   text-align: left;
   padding: 12px;
-  list-style: square;
+  /* list-style: square; */
+}
+
+.extLink {
+  color: black;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 768px) {
