@@ -8,7 +8,8 @@
     </div>
     <div class="content">
       <div class="line1">{{ sender }} has shared ({{ count }}) encrypted attachments with you via Skizzle.</div>
-      <div class="line2">You need to install Skizzle's chrome extension before you can securely view them.</div>
+      <div class="line2">Files shared via Skizzle are end-to-end encrypted and so, you need to install Skizzle's chrome extension before you can securely view them.</div>
+      <br/>
       <div class="line3">Here are the steps to get started:</div>
       <ol class="steps">
         <li>Install the extension from <a class="extLink" href="https://chrome.google.com/webstore/detail/skizzle/mjkcepplkockpofgjhbnbjajfljleegm/">here</a>.</li>
@@ -56,7 +57,7 @@ body {
   font-family: 'Fira Code', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 #app {
@@ -85,11 +86,12 @@ body {
 
 .line1 {
   font-weight: 500;
-  font-size: 16px;
   margin: 20px;
 }
 
 .line2, .line3 {
+  margin-left: 10%;
+  margin-right: 10%;
   font-weight: 300;
 }
 
@@ -101,7 +103,6 @@ body {
 .steps li {
   text-align: left;
   padding: 12px;
-  /* list-style: square; */
 }
 
 .extLink {
