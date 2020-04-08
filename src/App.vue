@@ -14,8 +14,8 @@
       <ol class="steps">
         <li>Install the extension from <a class="extLink" href="https://chrome.google.com/webstore/detail/skizzle/mjkcepplkockpofgjhbnbjajfljleegm/">here</a>.</li>
         <li>Click the Skizzle icon in the extensions area of your browser and follow through on the signup steps there.</li>
-        <li>Once signed up, refresh the page.</li>
-        <li>You will now see the attachment(s) in your email.</li>
+        <li>Signup using the same email you received the encrypted attachments on.</li>
+        <li>Refresh Gmail. You will now see the attachment(s) in your email.</li>
       </ol>
     </div>
   </div>
