@@ -12,7 +12,7 @@
       <br/>
       <div class="line3">Here are the steps to get started:</div>
       <ol class="steps">
-        <li>Install the extension from <a class="extLink" href="https://chrome.google.com/webstore/detail/skizzle/mjkcepplkockpofgjhbnbjajfljleegm/">here</a>.</li>
+        <li>Install the extension from <a class="extLink" target="_blank" href="https://chrome.google.com/webstore/detail/skizzle/mjkcepplkockpofgjhbnbjajfljleegm/">here</a>.</li>
         <li>Click the Skizzle icon in the extensions area of your browser and follow through on the signup steps there.</li>
         <li>Signup using the same email you received the encrypted attachments on.</li>
         <li>Refresh Gmail. You will now see the attachment(s) in your email.</li>
