@@ -14,7 +14,7 @@
       <br/>
       <div class="line4">To get started:</div>
       <div class="line4">
-        Install the extension from <a class="extLink" target="_blank" href="https://chrome.google.com/webstore/detail/skizzle/mjkcepplkockpofgjhbnbjajfljleegm/">here</a>
+        Install the extension from <a class="extLink" target="_blank" href="https://chrome.google.com/webstore/detail/skizzle/gecdgdfogopiiohohibbpnpkjkbbipdb">here</a>
         and click the<br/><img class="addToChromeBtn" src="@/assets/addToChromeBtn.png" /><br/>button on the top right of the chrome web store page.
       </div>
       <!-- <ol class="steps">
