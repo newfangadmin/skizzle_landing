@@ -8,15 +8,21 @@
     </div>
     <div class="content">
       <div class="line1">{{ sender }} has shared ({{ count }}) encrypted attachments with you via Skizzle.</div>
-      <div class="line2">Files shared via Skizzle are end-to-end encrypted and so, you need to install Skizzle's chrome extension before you can securely view them.</div>
+      <div class="line2">Files shared via Skizzle are end-to-end encrypted which means that no one except {{ sender }} and you can access this/these files. Not even Skizzle!<br/><br/>
+        But for <a class="extLink" target="_blank" href="https://en.wikipedia.org/wiki/End-to-end_encryption">E2EE</a> to really work, you need to have your own set of cryptographic keys to decrypt the file(s) shared<br/><br/>
+        And so, you need to install Skizzle's chrome extension before you can securely view them.</div>
       <br/>
-      <div class="line3">Here are the steps to get started:</div>
-      <ol class="steps">
+      <div class="line4">To get started:</div>
+      <div class="line4">
+        Install the extension from <a class="extLink" target="_blank" href="https://chrome.google.com/webstore/detail/skizzle/mjkcepplkockpofgjhbnbjajfljleegm/">here</a>
+        and click the<br/><img class="addToChromeBtn" src="@/assets/addToChromeBtn.png" /><br/>button on the top right of the chrome web store page.
+      </div>
+      <!-- <ol class="steps">
         <li>Install the extension from <a class="extLink" target="_blank" href="https://chrome.google.com/webstore/detail/skizzle/mjkcepplkockpofgjhbnbjajfljleegm/">here</a>.</li>
         <li>Click the Skizzle icon in the extensions area of your browser and follow through on the signup steps there.</li>
         <li>Signup using the same email you received the encrypted attachments on.</li>
         <li>Refresh Gmail. You will now see the attachment(s) in your email.</li>
-      </ol>
+      </ol> -->
     </div>
   </div>
 </template>
@@ -90,9 +96,15 @@ body {
 }
 
 .line2, .line3 {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
   font-weight: 300;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.line4 {
+  
 }
 
 .steps {
@@ -108,6 +120,10 @@ body {
 .extLink {
   color: black;
   font-weight: 700;
+}
+
+.addToChromeBtn {
+  width: 180px;
 }
 
 @media only screen and (max-width: 768px) {
